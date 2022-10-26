@@ -10,8 +10,8 @@ body {
   @apply overflow-hidden;
   @apply transition-all duration-300;
   @apply lg:mx-20 lg:my-10;
+  @apply bg-offWhite;
   @apply lg:h-[calc(100vh-5rem)] h-screen;
-  @apply bg-teal-500;
   @apply grid grid-cols-12;
   @apply lg:rounded-md shadow-2xl;
 
@@ -27,5 +27,17 @@ body {
   &__contacts {
     @apply overflow-y-auto;
     @apply lg:h-[calc(100vh-13rem)] h-[calc(100vh-8rem)];
+
+    &::-webkit-scrollbar {
+      width: 0.4rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-gray-300 rounded-sm;
+    }
   }
 }

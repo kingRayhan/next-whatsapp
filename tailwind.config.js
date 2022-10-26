@@ -9,6 +9,7 @@ module.exports = {
           DEFAULT: "#00CCC0",
           dark: "#1B7F79",
         },
+        offWhite: "#F0F2F5",
       },
     },
   },
